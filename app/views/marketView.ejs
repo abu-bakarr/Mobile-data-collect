@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+    <% include partials/templates/head %>
+</head>
+<body id="<%= pageID %>">
+
+    <!-- including the header template -->
+    <% include partials/templates/header %>
+
+    <!-- inclduing the product_market_page template -->
+    <% include partials/forms/product_market_form %>
+
+    <!-- firebase script -->
+    <script src="https://www.gstatic.com/firebasejs/5.8.0/firebase.js"></script>
+    <!-- firebaseConfig script -->
+    <script src="/js/firebaseConfig.js"></script>
+
+    <!-- product market js -->
+    <script src="/js/prodMarket.js"></script>
+
+    <!-- including the js scripts template -->
+    <% include partials/templates/jsscripts %>
+</body>
+</html>

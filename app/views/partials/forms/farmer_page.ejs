@@ -1,0 +1,66 @@
+<!-- farmer page -->
+<section class="section farmer_section hide-on-large-only">
+    <!-- <div class="divider"></div> -->
+    <form method="POST" action="/" id="farmersForm">
+        <div class="row center">
+            <!-- capturing the data -->
+            <div class="col s12 ">
+                <h5 class="center green-text text-darken-1">Please fill in the form</h5>
+                <div class="submitAlert">
+                    <p>Success: Your data has been sent</p>
+                </div>
+                <div class="container">
+                    <div class="input-field">
+                        <label for="name">Name</label>
+                        <input type="text" name="farmerName" id="farmerName" required>
+                    </div>
+                    <div class="input-field">
+                        <label for="location">Location</label>
+                        <input type="text" name="farmerLocation" id="farmerLocation" required>
+                    </div>
+                    <div class="input-field">
+                        <label for="chiefdom">Chiefdom</label>
+                        <input type="text" name="farmerChiefdom" id="farmerChiefdom" required>
+                    </div>
+                    <div class="input-field">
+                        <select id="farmerDistrict">
+                            <option class="gray-text" disabled selected>Choose a District</option>
+                            <option id="DIST_WAU">Western Area Urban</option>
+                            <option id="DIST_WAR">Western Area Rural</option>
+                            <option id="DIST_FAL">Falaba</option>
+                            <option id="DIST_KOI">Koinadugu</option>
+                            <option id="DIST_BOM">Bombali</option>
+                            <option id="DIST_TON">Tonkolili</option>
+                            <option id="DIST_KAM">Kambia</option>
+                            <option id="DIST_KAR">Karene</option>
+                            <option id="DIST_POR">Porto Loko</option>
+                            <option id="DIST_BO">Bo</option>
+                            <option id="DIST_BON">Bonthe</option>
+                            <option id="DIST_PUJ">Pujehun</option>
+                            <option id="DIST_MOY">Moyamba</option>
+                            <option id="DIST_KEN">Kenema</option>
+                            <option id="DIST_KAL">Kaliahun</option>
+                            <option id="DIST_KON">Kono</option>
+                        </select>
+                    </div>
+                    <div class="input-field">
+                        <select id="farmerGender">
+                            <option class="gray-text" disabled selected>Gender</option>
+                            <option id="GEN_M">Male</option>
+                            <option id="GEN_F">Female</option>
+                        </select>
+                    </div>  
+                    <div class="input-field">
+                        <label for="estDate">Established On</label>
+                        <input type="text" class="datepicker" name="farmerEstDate" id="farmerEstDate" required>
+                    </div>
+                    <div class="input-field">
+                        <label for="product">Product</label>
+                        <input type="text" name="farmerProduct" id="farmerProduct" required>
+                    </div>
+                </div>
+                <input class="btn btn-extend blue lighten-2" type="submit" value="send">
+            </div>
+        </div>
+    </form>
+</section>

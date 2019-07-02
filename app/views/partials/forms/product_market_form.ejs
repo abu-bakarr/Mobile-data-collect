@@ -1,0 +1,136 @@
+<!-- product market page -->
+<section class="section product_market_section hide-on-large-only">
+    <!-- <div class="divider"></div> -->
+    <form method="POST" action="/inputMarketData" id="productMarketForm">
+        <div class="row center">
+            <!-- capturing the data -->
+            <div class="col s12">
+                <h4 class="center green-text text-darken-1">PRODUCT MARKET INFORMATION</h4>
+                <small class="center green-text text-darken-1">Please fill in the form</small>
+                <div class="submitAlert">
+                    <p>Success: Your data has been sent</p>
+                </div>
+                <div class="errorAlert">
+                    <p>Error: All fields requires input</p>
+                </div>
+                <div class="container">
+                    <ul class="collapsible">
+                        <!-- Market Location Information -->
+                        <li class="active">
+                            <div class="collapsible-header">Market Location</div>
+                            <div class="collapsible-body">
+                                <div class="input-field">
+                                    <label for="mktLocality">Market Locality</label>
+                                    <input type="text" name="mktLocality" id="mktLocality" required>
+                                </div>
+                                <div class="input-field">
+                                    <label for="mktChiefdom">Chiefdom</label>
+                                    <input type="text" name="mktChiefdom" id="mktChiefdom" required>
+                                </div>
+                                <div class="input-field">
+                                    <select id="mktDistrict" name="mktDistrict" required class="validate">
+                                        <option value="" class="gray-text" required disabled selected>Choose a District</option>
+                                        <option id="DIST_WAU">Western Area Urban</option>
+                                        <option  id="DIST_WAR">Western Area Rural</option>
+                                        <option  id="DIST_FAL">Falaba</option>
+                                        <option  id="DIST_KOI">Koinadugu</option>
+                                        <option  id="DIST_BOM">Bombali</option>
+                                        <option  id="DIST_TON">Tonkolili</option>
+                                        <option  id="DIST_KAM">Kambia</option>
+                                        <option  id="DIST_KAR">Karene</option>
+                                        <option  id="DIST_POR">Porto Loko</option>
+                                        <option  id="DIST_BO">Bo</option>
+                                        <option  id="DIST_BON">Bonthe</option>
+                                        <option  id="DIST_PUJ">Pujehun</option>
+                                        <option  id="DIST_MOY">Moyamba</option>
+                                        <option  id="DIST_KEN">Kenema</option>
+                                        <option  id="DIST_KAL">Kaliahun</option>
+                                        <option  id="DIST_KON">Kono</option>
+                                    </select>
+                                </div>
+                                <div class="input-field">
+                                    <select id="mktRegion" name="mktRegion"  required class="validate">
+                                        <option class="gray-text" required disabled selected>Select a region</option>
+                                        <option id="WAU">Wester Area Urban</option>
+                                        <option id="WAR">Wester Area Rural</option>
+                                        <option id="NORT">North</option>
+                                        <option id="NORTW">North West</option>
+                                        <option id="EAST">East</option>
+                                        <option id="SOUTH">South</option>
+                                    </select>
+                                </div>
+                                <div class="input-field">
+                                    <label for="mktEnumerator">Enumerator</label>
+                                    <input type="text" name="mktEnumerator" id="mktEnumerator" required>
+                                </div>
+                                <div class="input-field">
+                                    <label for="mktDate">Date</label>
+                                    <input type="text" class="datepicker" id="mktDate" required>
+                                </div>
+                                <div class="input-field">
+                                   <select name="products" id="products" required class="validate">
+                                      <option value="" class="gray-text" required disabled selected>Choose Product</option>
+                                        <option  id="rice" value="kg">Rice</option>
+                                        <option  id="sweet_potatoe" value="kg">Sweet Potatoe</option>
+                                        <option  id="groundnut" value="kg">Groundnut</option>
+                                        <option  id="cassava" value="kg">Cassava</option>
+                                        <option  id="maize" value="kg">Maize</option>
+                                        <option  id="papper" value="kg">Papper</option>
+                                        <option  id="palmoil" value="gallon">Palm Oil</option>
+                                        <option  id="Cacao" value="kg">Cacao</option>
+                                      </select>
+                                  </div>
+                        </li>
+                        <!-- Agricultural Input for Wholesales Price -->
+                         <li>
+                            <div class="collapsible-header">Wholesales Price</div>
+                            <div class="collapsible-body">
+                                <div class="input-field">
+                                    <label for="WHS_Unit">Unit Of Measure</label>
+                                    <input type="text" name="WHS_Unit" id="WHS_Unit" required>
+                                </div>
+                                <div class="input-field kg">
+                                    <label for="WHS_Weight">Weight (Kg)</label>
+                                    <input type="number" name="WHS_Weight" id="WHS_Weight" required>
+                                </div>
+                                <div class="input-field gallon">
+                                    <label for="WHS_Weight">Weight (gallon)</label>
+                                    <input type="number" name="WHS_Weight" id="WHS_Weight" required>
+                                </div>
+                                
+                                <div class="input-field">
+                                    <label for="WHS_Price">Price(Leone)</label>
+                                    <input type="number" name="WHS_Price" id="WHS_Price" required>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Agricultural Input for Retail Price -->
+                        <li>
+                            <div class="collapsible-header">Retail Price</div>
+                            <div class="collapsible-body">
+                                <div class="input-field">
+                                    <label for="RET_Unit">Unit Of Measure</label>
+                                    <input type="text" name="RET_Unit" id="RET_Unit" required>
+                                </div>
+                                <div class="input-field kg">
+                                    <label for="RET_Weight">Weight(kg)</label>
+                                    <input type="number" name="RET_Weight" id="RET_Weight" required>
+                                </div>
+                                <div class="input-field allong">
+                                    <label for="RET_Weight">Weight(pint)</label>
+                                    <input type="number" name="RET_Weight" id="RET_Weight" required>
+                                </div>
+                                
+                                <div class="input-field">
+                                    <label for="RET_Price">Price(Leone)</label>
+                                    <input type="number" name="RET_Price" id="RET_Price" required>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <input class="btn btn-small btn-extend blue lighten-2 white-text" id="btn-new-mktData" type="submit" value="send">
+                </div>
+            </div>
+        </div>
+    </form>
+</section>

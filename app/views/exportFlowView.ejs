@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <% include partials/templates/head %>
+</head>
+<body id="<%= pageID %>">
+
+    <!-- including the header template -->
+    <% include partials/templates/header %>
+
+    <!-- inclduing the product_trade_flow_form template -->
+    <% include partials/forms/export_trade_flow_form %>
+
+    <!-- firebase script -->
+    <script src="https://www.gstatic.com/firebasejs/5.8.0/firebase.js"></script>
+    <!-- firebaseConfig script -->
+    <script src="/js/firebaseConfig.js"></script>
+    <!-- main script -->
+    <script src="/js/expoTradeFlow.js"></script>
+
+    <!-- including the js scripts template -->
+    <% include partials/templates/jsscripts %>
+</body>
+</html>

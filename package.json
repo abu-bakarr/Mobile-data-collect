@@ -1,0 +1,33 @@
+{
+    "name": "greenliving-datacollectiontool",
+    "version": "1.0.0",
+    "description": "this application is a data collection tool customized for Sierra Leone by the Green Living Team",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "nodemon -e css, ejs, js, json app"
+    },
+    "author": "Green Livivng",
+    "license": "ISC",
+    "dependencies": {
+        "bcrypt": "^3.0.4",
+        "chartjs-plugin-streaming": "^1.7.1",
+        "connect-flash": "^0.1.1",
+        "cookie-parser": "^1.4.4",
+        "ejs": "^2.6.1",
+        "express": "^4.16.4",
+        "express-handlebars": "^3.0.2",
+        "express-messages": "^1.0.1",
+        "express-session": "^1.15.6",
+        "express-validator": "^5.3.1",
+        "firebase": "^5.8.0",
+        "firebase-admin": "^6.5.0",
+        "flash": "^1.1.0",
+        "mongoose": "^5.4.19",
+        "nodemon": "^1.18.9",
+        "passport": "^0.4.0",
+        "passport-http": "^0.3.0",
+        "passport-local": "^1.0.0",
+        "pusher": "^2.2.0"
+    }
+}

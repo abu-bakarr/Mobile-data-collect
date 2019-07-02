@@ -1,0 +1,40 @@
+<!-- scripts -->
+<script src="js/jquery-3.3.1.min.js"></script>
+<!-- <script src="https://code.jquery.com/jquery-3.3.1.js"></script> -->
+<script src="js/materialize.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
+<script src="js/wow.min.js"></script>
+
+
+<script>
+    $(function(){
+        new WOW().init(); 
+        $('.sidenav').sidenav();
+        $('select').formSelect();
+
+        // for HTML5 "required" attribute
+        $("select[required]").css({display: "inline", height: 0, padding: 0, width: 0});
+        $('.collapsible').collapsible();
+        $('.datepicker').datepicker();
+
+         $('.gallon').hide();
+
+  $('[name="products"]').change(function() {
+    if ($('[name="products"]').val() === "gallon") {
+        $('.gallon').show();
+        $('.kg').hide();
+        $('.kg').removeAttr("required");
+    }else if ($('[name="products"]').val() === "kg") { 
+        $('.gallon').hide();
+        $('.kg').show();
+        $('.gallon').removeAttr("required");
+    }else{
+
+    }
+  });
+        
+    });
+
+
+</script>
