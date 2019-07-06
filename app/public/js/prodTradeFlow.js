@@ -15,19 +15,19 @@ function submitProductTradeForm(e) {
     e.preventDefault();
 
     // getting the values
-    var tradeFlowProductName = getInptValue('tradeFlowProductName');
-    var tradeFlowQuantity = getInptValue('tradeFlowQuantity');
-    var tradeFlowPrice = getInptValue('tradeFlowPrice');
-    var tradeFlowEnumerator = getInptValue('tradeFlowEnumerator');
-    var tradeFlowDate = getInptValue('tradeFlowDate');
-    var tradeFlowLocalityFROM = getInptValue('tradeFlowLocalityFROM');
-    var tradeFlowChiefdomFROM = getInptValue('tradeFlowChiefdomFROM');
-    var tradeFlowDistrictsFROM = getInptValue('tradeFlowDistrictsFROM');
-    var tradeFlowCountryFROM = getInptValue('tradeFlowCountryFROM');
-    var tradeFlowLocalityTO = getInptValue('tradeFlowLocalityTO');
-    var tradeFlowChiefdomTO = getInptValue('tradeFlowChiefdomTO');
-    var tradeFlowDistrictsTO = getInptValue('tradeFlowDistrictsTO');
-    var tradeFlowCountryTO = getInptValue('tradeFlowCountryTO');
+    var tradeFlowProductName = getInptValue('product');
+    var tradeFlowQuantity = getInptValue('tonage');
+    var tradeFlowPrice = getInptValue('value');
+    var tradeFlowEnumerator = getInptValue('enumerator');
+    var tradeFlowDate = getInptValue('date');
+    var tradeFlowLocalityFROM = getInptValue('locality_from');
+    var tradeFlowChiefdomFROM = getInptValue('chiefdom_from');
+    var tradeFlowDistrictsFROM = getInptValue('district_from');
+    var tradeFlowCountryFROM = getInptValue('country_from');
+    var tradeFlowLocalityTO = getInptValue('locality_to');
+    var tradeFlowChiefdomTO = getInptValue('chiefdom_to');
+    var tradeFlowDistrictsTO = getInptValue('district_to');
+    var tradeFlowCountryTO = getInptValue('country_to');
 
     connectedRef.on("value", function(snap) {
         if (snap.val() === true) {
@@ -74,8 +74,8 @@ function saveProdTradeData(tradeFlowProductName, tradeFlowQuantity, tradeFlowPri
 
     newProdTradeFlowRef.set({
         product: tradeFlowProductName,
-        quantity: tradeFlowQuantity,
-        price: tradeFlowPrice,
+        tonage: tradeFlowQuantity,
+        value: tradeFlowPrice,
         enumerator: tradeFlowEnumerator,
         date: tradeFlowDate,
         locality_from: tradeFlowLocalityFROM,

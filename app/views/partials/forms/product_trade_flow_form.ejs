@@ -17,10 +17,10 @@
                     <ul class="collapsible">
                         <!-- Market Location Information -->
                         <li class="active">
-                            <div class="collapsible-header">Product input</div>
+                            <div class="collapsible-header">Product Input</div>
                             <div class="collapsible-body">
                                  <div class="input-field">
-                                    <select name="tradeFlowProductName" id="tradeFlowProductName" required class="validate">
+                                    <select name="product" id="product"  class="validate">
                                         <option value="" class="gray-text" required disabled selected>Choose Product</option>
                                         <option  id="rice" value="Rice">Rice</option>
                                         <option  id="sweet_potatoe" value="Sweet Potatoe">Sweet Potatoe</option>
@@ -35,21 +35,21 @@
                                     </select>
                                 </div>
                                 <div class="input-field">
-                                    <label for="tradeFlowQuantity">Tonage</label>
-                                    <input type="text" name="tradeFlowQuantity" id="tradeFlowQuantity" required>
+                                    <label for="tonage">Tonage</label>
+                                    <input type="text" name="tonage" id="tonage" required>
                                 </div>
-                              <div class="input-field">
-                                    <label for="tradeFlowPrice">Value</label>
-                                    <input type="text" name="tradeFlowPrice" id="tradeFlowPrice" required>
+                                <div class="input-field">
+                                    <label for="value">Value</label>
+                                    <input type="text" name="value" id="value" required>
                                 </div>
                                
                                 <div class="input-field">
-                                    <label for="tradeFlowEnumerator">Enumerator</label>
-                                    <input type="text" name="tradeFlowEnumerator" id="tradeFlowEnumerator" required>
+                                    <label for="enumerator">Enumerator</label>
+                                    <input type="text" name="enumerator" id="enumerator" required>
                                 </div>
                                 <div class="input-field">
-                                    <label for="tradeFlowDate">Date</label>
-                                    <input type="text" class="datepicker" id="tradeFlowDate" required>
+                                    <label for="date">Date</label>
+                                    <input type="text" class="datepicker" id="date" required>
                                 </div>
                             </div>
                         </li>
@@ -58,15 +58,15 @@
                             <div class="collapsible-header">From</div>
                             <div class="collapsible-body">
                                 <div class="input-field">
-                                    <label for="tradeFlowLocalityFROM">Locality</label>
-                                    <input type="text" name="tradeFlowLocalityFROM" id="tradeFlowLocalityFROM" required>
+                                    <label for="locality_from">Locality</label>
+                                    <input type="text" name="locality_from" id="locality_from" required>
                                 </div>
                                 <div class="input-field">
-                                    <label for="tradeFlowChiefdomFROM">Chiefdom</label>
-                                    <input type="text" name="tradeFlowChiefdomFROM" id="tradeFlowChiefdomFROM" required>
+                                    <label for="chiefdom_from">Chiefdom</label>
+                                    <input type="text" name="chiefdom_from" id="chiefdom_from" required>
                                 </div>
                                 <div class="input-field">
-                                    <select name="tradeFlowDistrictsFROM" id="tradeFlowDistrictsFROM" required class="validate">
+                                    <select name="district_from" id="district_from" required class="validate">
                                         <option value="" class="gray-text" required disabled selected>Choose a District</option>
                                         <option  id="DIST_WAU">Western Area Urban</option>
                                         <option  id="DIST_WAR">Western Area Rural</option>
@@ -87,8 +87,8 @@
                                     </select>
                                 </div>
                                 <div class="input-field">
-                                    <label for="tradeFlowCountryFROM">Country</label>
-                                    <input type="text" name="tradeFlowCountryFROM" id="tradeFlowCountryFROM" required>
+                                    <label for="country_from">Country</label>
+                                    <input type="text" name="country_from" id="country_from" required>
                                 </div>
                             </div>
                         </li>
@@ -97,15 +97,15 @@
                             <div class="collapsible-header">To</div>
                             <div class="collapsible-body">
                                 <div class="input-field">
-                                    <label for="tradeFlowLocalityTO">Locality</label>
-                                    <input type="text" name="tradeFlowLocalityTO" id="tradeFlowLocalityTO" required>
+                                    <label for="locality_to">Locality</label>
+                                    <input type="text" name="locality_to" id="locality_to" required>
                                 </div>
                                 <div class="input-field">
-                                    <label for="tradeFlowChiefdomTO">Chiefdom</label>
-                                    <input type="text" name="tradeFlowChiefdomTO" id="tradeFlowChiefdomTO" required>
+                                    <label for="chiefdom_to">Chiefdom</label>
+                                    <input type="text" name="chiefdom_to" id="chiefdom_to" required>
                                 </div>
                                 <div class="input-field">
-                                    <select name="tradeFlowDistrictsTO" id="tradeFlowDistrictsTO" required class="validate">
+                                    <select name="district_to" id="district_to" required class="validate">
                                         <option value="" class="gray-text" required disabled selected>Choose a District</option>
                                         <option  id="DIST_WAU" value="">Western Area Urban</option>
                                         <option  id="DIST_WAR" value="">Western Area Rural</option>
@@ -126,8 +126,8 @@
                                     </select>
                                 </div>
                                 <div class="input-field">
-                                    <label for="tradeFlowCountryTO">Country</label>
-                                    <input type="text" name="tradeFlowCountryTO" id="tradeFlowCountryTO" required>
+                                    <label for="country_to">Country</label>
+                                    <input type="text" name="country_to" id="country_to" required>
                                 </div>
                             </div>
                         </li>
