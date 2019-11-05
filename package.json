@@ -23,7 +23,7 @@
         "firebase": "^5.8.0",
         "firebase-admin": "^6.5.0",
         "flash": "^1.1.0",
-        "mongoose": "^5.4.19",
+        "mongoose": "^5.7.5",
         "nodemon": "^1.18.9",
         "passport": "^0.4.0",
         "passport-http": "^0.3.0",
