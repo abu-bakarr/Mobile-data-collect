@@ -10,7 +10,7 @@
     "author": "Green Livivng",
     "license": "ISC",
     "dependencies": {
-        "bcrypt": "^3.0.4",
+        "bcrypt": "^5.0.0",
         "chartjs-plugin-streaming": "^1.7.1",
         "connect-flash": "^0.1.1",
         "cookie-parser": "^1.4.4",
